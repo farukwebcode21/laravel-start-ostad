@@ -7,6 +7,12 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Your Can See Your Requirement prove
+[Screenshot-1](https://i.ibb.co/bQgL9CT/Screenshot-from-2023-05-14-21-03-51.png)
+[Screenshoot -2](https://i.ibb.co/VC2yJwB/Screenshot-from-2023-05-14-21-01-15.png)
+
+# How to install Laravel you can see laravel website documentation and follow instruction you can see everything how can install laravel windows, MacOs, Linux and others
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
