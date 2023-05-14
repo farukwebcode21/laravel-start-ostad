@@ -12,7 +12,9 @@
 [Screenshot-1](https://i.ibb.co/bQgL9CT/Screenshot-from-2023-05-14-21-03-51.png)
 [Screenshoot -2](https://i.ibb.co/VC2yJwB/Screenshot-from-2023-05-14-21-01-15.png)
 
-### How to install Laravel you can see laravel website documentation and follow instruction you can see everything how can install laravel windows, MacOs, Linux and others
+## How to install Laravel
+
+How to install Laravel you can see laravel website documentation and follow instruction you can see everything how can install laravel windows, MacOs, Linux and others [Laravel](https://laravel.com/)
 
 ## About Laravel
 
