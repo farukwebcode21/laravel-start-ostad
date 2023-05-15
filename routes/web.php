@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\HelloController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,7 +19,19 @@ Route::get( '/', function () {
     return view( 'welcome' );
 } );
 
-// Route::get( '/hello', function () {
-//     return 'Hello Larave';
-// } );
+// Normal Route
 Route::get( "/hello", [HelloController::class, 'hello'] );
+
+
+// Route::get( '/books', [BookController::class, 'Books'] );
+// Route::get( '/books/{id}', [BookController::class, 'getBooks'] );
+// Route::get( '/books/{id}/{field}', [BookController::class, 'getBookField'] );
+
+// route group
+Route::controller( BookController::class )->group( function () {
+    Route::get( '/books', 'books' );
+    Route::get( '/books/{id}', 'getBooks' );
+    Route::get( '/books/{id}/{field}', 'getBookField' );
+
+    Route::post('/books', 'createBook');
+} );
