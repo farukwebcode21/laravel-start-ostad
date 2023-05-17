@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\DemoController;
 use App\Http\Controllers\HelloController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,3 +36,5 @@ Route::controller( BookController::class )->group( function () {
 
     Route::post('/books', 'createBook');
 } );
+
+Route::get("/demo", [DemoController::class, 'DemoAction']);
