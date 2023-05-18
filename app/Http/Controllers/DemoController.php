@@ -8,9 +8,18 @@ class DemoController extends Controller
 {
     function DemoAction(Request $request){
         // return $request->header("auth-token");
-        $myFile = $request->file('photo');
-        $size = filesize($myFile);
-        return $size;
+
+        // $photo = $request->file('photo');
+        // $photo->move(public_path('upload'),$photo->getClientOriginalName());
+        // return $photo;
+
+        // $size = filesize($photo);
+        // $type = filetype($photo);
+        // $OrginalName = $photo->getClientOriginalName();
+        // $extension = $photo->extension();
+        // return [$size, $type, $OrginalName, $extension, ];
+
+        return $request->ip();
        
     }
 }
