@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class DemoController extends Controller
 {
     function DemoAction(Request $request){
-        return 'Demo Controller';
+        // return $request->header("auth-token");
+        $myFile = $request->file('photo');
+        $size = filesize($myFile);
+        return $size;
+       
     }
 }

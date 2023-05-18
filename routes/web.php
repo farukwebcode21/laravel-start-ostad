@@ -37,4 +37,4 @@ Route::controller( BookController::class )->group( function () {
     Route::post('/books', 'createBook');
 } );
 
-Route::get("/demo", [DemoController::class, 'DemoAction']);
+Route::post("/demo", [DemoController::class, 'DemoAction']);
