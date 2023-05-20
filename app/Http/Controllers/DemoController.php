@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class DemoController extends Controller
 {
-    function DemoAction(Request $request){
+    function DemoAction(Request $request):bool{
         // return $request->header("auth-token");
 
         // $photo = $request->file('photo');
@@ -19,7 +19,11 @@ class DemoController extends Controller
         // $extension = $photo->extension();
         // return [$size, $type, $OrginalName, $extension, ];
 
-        return $request->ip();
+        // return $request->ip();
+        $photoFile =$request->file('photo');
+
+        return true;
+
        
     }
 }

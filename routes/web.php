@@ -4,6 +4,7 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\HelloController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\WhateverController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,3 +44,5 @@ Route::controller( BookController::class )->group( function () {
 Route::post("/demo", [DemoController::class, 'DemoAction']);
 Route::post("/test", [TestController::class, 'TestActions']);
 // Route::get("/test/{name}", [TestController::class, 'TestAction']);
+
+Route::resource('orders', WhateverController::class);
