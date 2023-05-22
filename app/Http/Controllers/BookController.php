@@ -36,11 +36,11 @@ class BookController extends Controller {
             return array_splice($this->books, 0, $limit);
         }
     }
-    function getBooks( $id ) {
+    function getBooks(string $id ) {
         $bookId = $id - 1;
         return $this->books[$bookId];
     }
-    function getBookField( $id, $field ) {
+    function getBookField(string $id, string $field ) {
         $bookId = $id - 1;
         $book = $this->books[$bookId];
         return $book[$field];

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class DemoController extends Controller
 {
-    function DemoAction(Request $request):bool{
+    function DemoAction(Request $request){
         // return $request->header("auth-token");
 
         // $photo = $request->file('photo');
@@ -20,9 +20,9 @@ class DemoController extends Controller
         // return [$size, $type, $OrginalName, $extension, ];
 
         // return $request->ip();
-        $photoFile =$request->file('photo');
+        // $photoFile =$request->file('photo');
 
-        return true;
+        return 'Welcome to Laravel';
 
        
     }

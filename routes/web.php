@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AssingmentController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\DemoTestController;
 use App\Http\Controllers\HelloController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\WhateverController;
@@ -42,7 +44,24 @@ Route::controller( BookController::class )->group( function () {
 } );
 
 Route::post("/demo", [DemoController::class, 'DemoAction']);
+
 Route::post("/test", [TestController::class, 'TestActions']);
+// Route::post('/name', [DemoTestController::class, 'store']);
 // Route::get("/test/{name}", [TestController::class, 'TestAction']);
 
 Route::resource('orders', WhateverController::class);
+
+// assingment ostad requirement
+ Route::post('/username', [AssingmentController::class, 'user']);
+ Route::post('/username', [AssingmentController::class, 'userAgent']);
+
+// assingment route 
+
+// Route::get('/DemoFunction', [AssingmentController::class, 'DemoFunction']);
+// Route::get('/DemoFunction/{name}/{age}', [AssingmentController::class, 'DemoFunction']);
+// Route::post('/DemoFunction', [AssingmentController::class, 'DemoFunction']);
+
+// Assingment Route Description
+
+Route::post('/name', [AssingmentController::class, 'postUserName']);
+Route::post('/name', [AssingmentController::class, 'postHeader']);
